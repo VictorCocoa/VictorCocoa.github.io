@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="victorCocoa">
 <meta property="og:description" content="前言 曾几何时，大学里面还有一门课，叫PKI（Public Key Infrastructure），当时感觉没毛用工作后感慨，教那门课的老师真和蔼。除了安全三要素机密性（Confidentiality）、完整性（Integrity）、可用性（Availability），加上数字签名的不可否认性，使的我们的网络环境，尤其在电子商务中更加安全本文将介绍PKI中的数字签名，涉及到的名词主要有，CA、公钥">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-23T09:32:03.000Z">
+<meta property="og:updated_time" content="2017-08-23T09:34:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数字签名中的密钥(公钥、私钥)">
 <meta name="twitter:description" content="前言 曾几何时，大学里面还有一门课，叫PKI（Public Key Infrastructure），当时感觉没毛用工作后感慨，教那门课的老师真和蔼。除了安全三要素机密性（Confidentiality）、完整性（Integrity）、可用性（Availability），加上数字签名的不可否认性，使的我们的网络环境，尤其在电子商务中更加安全本文将介绍PKI中的数字签名，涉及到的名词主要有，CA、公钥">
@@ -71,6 +71,8 @@
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友情链接</a>
     			
             
     			
@@ -393,6 +395,8 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
+      
+      
     
       
       
@@ -404,13 +408,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友情链接</a></li>
+      
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -477,6 +483,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="https://boom618.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>何大师</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     
